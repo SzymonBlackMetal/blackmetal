@@ -46,7 +46,7 @@ window.artist = {
                 },
 				{
                     title: "Mg 08/15",
-                    rating: 7,5
+                    rating: 7.5
                 }
             ]
         }
