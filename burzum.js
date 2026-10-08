@@ -65,26 +65,8 @@ window.artist = {
                     rating: 0
                 },
             ]
-        },
-
-        {
-            title: "Det som engang var",
-            year: 1993,
-            cover: "img/Albums/DetSom.jpg",
-            rating: 9.5,
-
-            tracks: [
-                {
-                    title: "Det som en gang var",
-                    rating: 10
-                },
-                {
-                    title: "Hvis lyset tar oss",
-                    rating: 8.4
-                }
-            ]
         }
-
+		
     ]
 };
 
