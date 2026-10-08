@@ -91,3 +91,5 @@ window.artist = {
 
     ]
 };
+
+(window.allArtists = window.allArtists || []).push(window.artist);

@@ -1,4 +1,4 @@
-const artist = {
+window.artist = {
     name: "Burzum",
 
 	info: {
@@ -87,3 +87,5 @@ const artist = {
 
     ]
 };
+
+(window.allArtists = window.allArtists || []).push(window.artist);

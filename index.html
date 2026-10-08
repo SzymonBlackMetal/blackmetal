@@ -8,13 +8,10 @@
 	</head>
 	<header>
 			<b class="main-title">Black Metal</b>
-			<!--
-			<div style="width: 100%;">
-				<a class="nav-title" href="Bands.html">Albumy</a>
-				<a class="nav-title" href="Bands.html">Tier Lista</a>
-				<a class="nav-title" href="Bands.html">Wykonawcy</a>
-			</div>
-			-->
+			<nav class="navigation">
+				<a class="nav-title active" href="#" data-tab="albums">Albumy</a>
+				<a class="nav-title" href="#" data-tab="tracks">Utwory</a>
+			</nav>
 	</header>
 	<body>
 		<main class="ranking" id="ranking">
@@ -59,6 +56,16 @@
 				 data-spotify="https://open.spotify.com/album/2RxBdrvHKwgx57RKrNQ9hz?si=W2SpJsavTMqG0SSYYn55Ew">
 			</div>
 		</main>
+
+		<main class="ranking" id="tracks-ranking" hidden></main>
+		<div id="load-more-wrap" hidden>
+			<button type="button" id="load-more" class="load-more-btn">Więcej...</button>
+		</div>
+
+		<script src="mayhem.js"></script>
+		<script src="burzum.js"></script>
+		<script src="minenwerfer.js"></script>
+		<script src="patriatrkh.js"></script>
 		<script src="script.js"></script>
 	</body>
 </html>
