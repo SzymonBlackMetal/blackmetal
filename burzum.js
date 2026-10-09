@@ -65,6 +65,40 @@ window.artist = {
                     rating: 0
                 },
             ]
+        },
+
+		{
+            title: "Burzum",
+            year: 1996,
+            cover: "img/Albums/Filosofem.png",
+            rating: 8,
+
+            tracks: [
+                {
+                    title: "Dunkelheit",
+                    rating: 9
+                },
+                {
+                    title: "Jesus' Tod",
+                    rating: 7
+                },
+                {
+                    title: "Erblicket Die Tochter Des Firmaments",
+                    rating: 0
+                },
+				{
+                    title: "Gebrechlichkeit I",
+                    rating: 0
+                },
+				{
+                    title: "Rundgang Um Die Transzendentale Säule der Singularität",
+                    rating: 0
+                },
+				{
+                    title: "Gebrechlichkeit II",
+                    rating: 0
+                }
+            ]
         }
 		
     ]
