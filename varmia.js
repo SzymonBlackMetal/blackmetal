@@ -1,5 +1,5 @@
 window.artist = {
-    name: "Patriarkh",
+    name: "Varmia",
 
 	info: {
         image: "img/Bands/Varmia.jpg",
