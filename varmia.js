@@ -17,7 +17,7 @@ window.artist = {
             title: "bal Lada",
             year: 2021,
             cover: "img/Albums/bal Lada.jpg",
-            rating: 0,
+            rating: 6.5,
 
             tracks: [
                 {
@@ -30,11 +30,11 @@ window.artist = {
                 },
                 {
                     title: "ruja",
-                    rating: 5
+                    rating: 5.5
                 },
 				{
                     title: "Upperan",
-                    rating: 0
+                    rating: 5
                 },
 				{
                     title: "nazachód",
