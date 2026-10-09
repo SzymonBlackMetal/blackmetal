@@ -68,7 +68,7 @@ window.artist = {
         },
 
 		{
-            title: "Burzum",
+            title: "Filosofem",
             year: 1996,
             cover: "img/Albums/Filosofem.png",
             rating: 8,
