@@ -30,7 +30,35 @@ window.artist = {
                 },
                 {
                     title: "ruja",
-                    rating: 7
+                    rating: 5
+                },
+				{
+                    title: "Upperan",
+                    rating: 0
+                },
+				{
+                    title: "nazachód",
+                    rating: 0
+                },
+				{
+                    title: "Zari Deiwas",
+                    rating: 0
+                },
+				{
+                    title: "O",
+                    rating: 0
+                },
+				{
+                    title: "głody",
+                    rating: 0
+                },
+				{
+                    title: "ten blask co po nim śmierć",
+                    rating: 0
+                },
+				{
+                    title: "koniec",
+                    rating: 0
                 },
             ]
         },
