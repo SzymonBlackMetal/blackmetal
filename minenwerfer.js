@@ -17,7 +17,7 @@ window.artist = {
             title: "Alpenpässe",
             year: 2019,
             cover: "img/Albums/Alpenpasse.jpg",
-            rating: 8,
+            rating: 8.1,
 
             tracks: [
                 {
@@ -38,11 +38,11 @@ window.artist = {
                 },
 				{
                     title: "Tiroler Edelweiss",
-                    rating: 6.5
+                    rating: 9
                 },
 				{
                     title: "Withered Tombs",
-                    rating: 0
+                    rating: 6
                 },
 				{
                     title: "Mg 08/15",
