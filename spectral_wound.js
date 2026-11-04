@@ -14,7 +14,7 @@ window.artist = {
     albums: [
 
         {
-            title: "A",
+            title: "A Diabolic Thirst",
             year: 2021,
             cover: "img/Albums/A Diabolic Thirst.jpg",
             rating: 6.7,
