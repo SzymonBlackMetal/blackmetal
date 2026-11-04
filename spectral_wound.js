@@ -2,7 +2,7 @@ window.artist = {
     name: "Spectral Wound",
 
 	info: {
-        image: "img/Bands/Spectral Wound.jpg",
+        image: "img/Bands/Spectral Wound.png",
         country: "Canada",
         location: "Montreal, Quebec",
         founded: "2015",
