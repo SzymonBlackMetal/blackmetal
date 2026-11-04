@@ -17,7 +17,7 @@ window.artist = {
             title: "A Diabolic Thirst",
             year: 2021,
             cover: "img/Albums/A Diabolic Thirst.jpg",
-            rating: 0,
+            rating: 6.7,
 
             tracks: [
                 {
@@ -30,7 +30,7 @@ window.artist = {
                 },
                 {
                     title: "Soul Destroying Black Debauchery",
-                    rating: 0
+                    rating: 6
                 },
                 {
                     title: "Mausoleal Drift",
