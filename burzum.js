@@ -58,7 +58,7 @@ window.artist = {
 		{
             title: "Aske",
             year: 1993,
-            cover: "img/Albums/Burzum.jpeg",
+            cover: "img/Albums/Aske.jpeg",
             rating: 5,
 
             tracks: [
