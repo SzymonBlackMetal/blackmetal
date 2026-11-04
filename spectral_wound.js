@@ -26,7 +26,7 @@ window.artist = {
                 },
                 {
                     title: "Frigid and Spellbound",
-                    rating: 0
+                    rating: 7.5
                 },
                 {
                     title: "Soul Destroying Black Debauchery",
@@ -34,6 +34,14 @@ window.artist = {
                 },
                 {
                     title: "Mausoleal Drift",
+                    rating: 0
+                },
+				{
+                    title: "Fair Lucifer, Sad Relic",
+                    rating: 0
+                },
+				{
+                    title: "Diabolic Immanence",
                     rating: 0
                 },
             ]
