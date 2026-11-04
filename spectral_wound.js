@@ -14,9 +14,9 @@ window.artist = {
     albums: [
 
         {
-            title: "The Deceased Dwell in Darkness",
+            title: "A Diabolic Thirst",
             year: 2021,
-            cover: "img/Albums/A Diabolic Thirst.jpeg",
+            cover: "img/Albums/A Diabolic Thirst.jpg",
             rating: 0,
 
             tracks: [
