@@ -17,7 +17,7 @@ window.artist = {
             title: "Burzum",
             year: 1992,
             cover: "img/Albums/Burzum.jpeg",
-            rating: 6,
+            rating: 6.1,
 
             tracks: [
                 {
@@ -52,6 +52,16 @@ window.artist = {
                     title: "Dungeons of Darkness",
                     rating: 2
                 },
+            ]
+        },
+
+		{
+            title: "Aske",
+            year: 1993,
+            cover: "img/Albums/Burzum.jpeg",
+            rating: 5,
+
+            tracks: [
 				{
                     title: "Stemmen Fra Taarnet",
                     rating: 0
