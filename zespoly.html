@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="theme-color" content="#000000">
+		<link rel="manifest" href="manifest.json">
+		<link rel="icon" type="image/png" href="img/icon.png">
+		<link rel="apple-touch-icon" href="img/icon.png">
+		<link href="style.css" rel="stylesheet">
+		<title>Black Metal</title>
+	</head>
+	<body>
+		<header>
+			<b class="main-title">Black Metal</b>
+			<nav class="navigation">
+				<a class="nav-title" href="index.html">Albumy</a>
+				<a class="nav-title" href="index.html#tracks">Utwory</a>
+				<a class="nav-title active" href="zespoly.html">Zespoły</a>
+			</nav>
+		</header>
+
+		<div class="controls">
+			<div class="search-wrap">
+				<input type="search" id="bands-search" class="search-input" placeholder="Szukaj zespołu, kraju, gatunku…" autocomplete="off">
+			</div>
+			<div class="filters">
+				<select id="bands-country" class="filter-select">
+					<option value="">Wszystkie kraje</option>
+				</select>
+				<select id="bands-genre" class="filter-select">
+					<option value="">Wszystkie gatunki</option>
+				</select>
+			</div>
+		</div>
+
+		<main class="bands-grid" id="bands-grid"></main>
+		<p id="bands-empty" class="empty-state" hidden>Brak wyników.</p>
+
+		<script src="data.js"></script>
+		<script src="bands-list.js"></script>
+		<script>
+			if ("serviceWorker" in navigator) {
+				navigator.serviceWorker.register("sw.js").catch(function () {});
+			}
+		</script>
+	</body>
+</html>
