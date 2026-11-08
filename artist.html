@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="theme-color" content="#000000">
+		<link rel="manifest" href="manifest.json">
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" type="image/png" href="img/icon.png">
+		<link rel="apple-touch-icon" href="img/icon.png">
+		<title>Artysta</title>
+	</head>
+	<body>
+		<header>
+			<a href="index.html" class="back">← Powrót</a>
+			<h1 class="artist-title"></h1>
+		</header>
+		<main class="discography"></main>
+
+		<script src="data.js"></script>
+		<script>
+			(function () {
+				const params = new URLSearchParams(window.location.search);
+				const name = params.get("name");
+				if (!name) {
+					document.querySelector(".artist-title").textContent = "Nie znaleziono artysty";
+					return;
+				}
+				const decoded = decodeURIComponent(name);
+				const artist = (window.allArtists || []).find(
+					(a) => a.name.toLowerCase() === decoded.toLowerCase()
+				);
+				if (!artist) {
+					document.querySelector(".artist-title").textContent = "Nie znaleziono: " + decoded;
+					return;
+				}
+				window.artist = artist;
+				document.title = artist.name;
+			})();
+		</script>
+		<script src="bands.js"></script>
+		<script src="script.js"></script>
+		<script>
+			if ("serviceWorker" in navigator) {
+				navigator.serviceWorker.register("sw.js").catch(function () {});
+			}
+		</script>
+	</body>
+</html>

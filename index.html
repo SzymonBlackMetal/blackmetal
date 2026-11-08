@@ -1,123 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 	<head>
-		<link href="style.css" rel="stylesheet">
+		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="icon" type="image/x-icon" href="img/icon.png">
+		<meta name="theme-color" content="#000000">
+		<meta name="description" content="Ranking albumów i utworów black metal">
+		<link rel="manifest" href="manifest.json">
+		<link rel="icon" type="image/png" href="img/icon.png">
+		<link rel="apple-touch-icon" href="img/icon.png">
+		<link href="style.css" rel="stylesheet">
 		<title>Black Metal</title>
 	</head>
-	<header>
+	<body>
+		<header>
 			<b class="main-title">Black Metal</b>
 			<nav class="navigation">
 				<a class="nav-title active" href="#" data-tab="albums">Albumy</a>
 				<a class="nav-title" href="#" data-tab="tracks">Utwory</a>
+				<a class="nav-title" href="zespoly.html">Zespoły</a>
 			</nav>
-	</header>
-	<body>
-		<main class="ranking" id="ranking">
-			<div class="album"
-				 data-title="Alpenpässe"
-				 data-artist="Minenwerfer"
-				 data-cover="img/Albums/Alpenpasse.jpg"
-				 data-rating="8.1"
-				 data-page="Minenwerfer.html"
-				 data-spotify="https://open.spotify.com/album/4YR2UjyayKR5TMb67QUWiB?si=oRQ-cxqGQO6vVwPu3DVmIQ">
-			</div>
-			<div class="album"
-				 data-title="Burzum"
-				 data-artist="Burzum"
-				 data-cover="img/Albums/Burzum.jpeg"
-				 data-rating="6.1"
-				 data-page="Burzum.html"
-				 data-spotify="https://open.spotify.com/artist/7L6u6TyhjuwubrcojPeNgf?si=tUBHJGOnTfijEk4oepVukQ">
-			</div>
-			<div class="album"
-				 data-title="Prorok Ilja"
-				 data-artist="Patriarkh"
-				 data-cover="img/Albums/Prorok Ilja.jpg"
-				 data-rating="8.1"
-				 data-page="Patriarkh.html"
-				 data-spotify="https://open.spotify.com/album/7Dnh5YZEYXnYVmHorCVbD0?si=OLQhw-d4ToytZDCYEx6wUQ">
-			</div>
-			<div class="album"
-				 data-title="Carju Niebiesnyj"
-				 data-artist="Patriarkh"
-				 data-cover="img/Albums/Carju niebiesnyj.jpg"
-				 data-rating="6.4"
-				 data-page="Patriarkh.html"
-				 data-spotify="https://open.spotify.com/album/6JFoWVNBn6Gr07DQLxY0lJ?si=xHgJfyVxTBK95xOgVE1mBg">
-			</div>
-			<div class="album"
-				 data-title="Deathcrush"
-				 data-artist="Mayhem"
-				 data-cover="img/Albums/Deathcrush.jpeg"
-				 data-rating="6.8"
-				 data-page="Mayhem.html"
-				 data-spotify="https://open.spotify.com/album/2RxBdrvHKwgx57RKrNQ9hz?si=W2SpJsavTMqG0SSYYn55Ew">
-			</div>
-			<div class="album"
-				 data-title="Filosofem"
-				 data-artist="Burzum"
-				 data-cover="img/Albums/Filosofem.png"
-				 data-rating="8"
-				 data-page="Burzum.html"
-				 data-spotify="0">
-			</div>
-			<div class="album"
-				 data-title="bal Lada"
-				 data-artist="Varmia"
-				 data-cover="img/Albums/bal Lada.jpg"
-				 data-rating="6.5"
-				 data-page="Varmia.html"
-				 data-spotify="https://open.spotify.com/album/3wacbGIAV7MTxHy39VqiQN?si=zeplc5wsSneI9GRUiRoCTQ">
-			</div>
-			<div class="album"
-				 data-title="Exercises in Futility"
-				 data-artist="mgła"
-				 data-cover="img/Albums/Exercises in Futility.jpg"
-				 data-rating="0"
-				 data-page="mgla.html"
-				 data-spotify="https://open.spotify.com/album/453zAaME9iOeCQ5B7SfkDM?si=CeZLYhHnTgS-T0S8uDtaIA">
-			</div>
-			<div class="album"
-				 data-title="The Deceased Dwell in Darkness"
-				 data-artist="Sarastus"
-				 data-cover="img/Albums/The Deceased Dwell in Darkness.jpeg"
-				 data-rating="7.6"
-				 data-page="Sarastus.html"
-				 data-spotify="https://open.spotify.com/album/7sRLf57GVB9j0T0RDMqTzi?si=YO_XUcHeRyCt9p3GYzzw0w">
-			</div>
-			<div class="album"
-				 data-title="A Diabolic Thirst"
-				 data-artist="Spectral Wound"
-				 data-cover="img/Albums/A Diabolic Thirst.jpg"
-				 data-rating="0"
-				 data-page="spectral_wound.html"
-				 data-spotify="">
-			</div>
-			<div class="album"
-				 data-title="Aske"
-				 data-artist="Burzum"
-				 data-cover="img/Albums/Aske.jpg"
-				 data-rating="5"
-				 data-page="Burzum.html"
-				 data-spotify="https://open.spotify.com/artist/7L6u6TyhjuwubrcojPeNgf?si=tUBHJGOnTfijEk4oepVukQ">
-			</div>
-		</main>
+		</header>
 
+		<div class="controls">
+			<div class="search-wrap">
+				<input type="search" id="search" class="search-input" placeholder="Szukaj albumu, zespołu, utworu…" autocomplete="off">
+			</div>
+			<div class="filters" id="filters">
+				<select id="filter-country" class="filter-select" title="Kraj">
+					<option value="">Wszystkie kraje</option>
+				</select>
+				<select id="filter-genre" class="filter-select" title="Gatunek">
+					<option value="">Wszystkie gatunki</option>
+				</select>
+				<select id="filter-rating" class="filter-select" title="Ocena">
+					<option value="">Dowolna ocena</option>
+					<option value="9">9+</option>
+					<option value="8">8+</option>
+					<option value="7">7+</option>
+					<option value="5">5+</option>
+				</select>
+				<select id="filter-year" class="filter-select" title="Lata">
+					<option value="">Wszystkie lata</option>
+					<option value="1990-1999">1990–1999</option>
+					<option value="2000-2009">2000–2009</option>
+					<option value="2010-2019">2010–2019</option>
+					<option value="2020-2029">2020+</option>
+				</select>
+				<button type="button" id="filters-reset" class="filter-reset" title="Wyczyść filtry">✕</button>
+			</div>
+		</div>
+
+		<main class="ranking" id="ranking"></main>
 		<main class="ranking" id="tracks-ranking" hidden></main>
 		<div id="load-more-wrap" hidden>
 			<button type="button" id="load-more" class="load-more-btn">Więcej...</button>
 		</div>
+		<p id="empty-state" class="empty-state" hidden>Brak wyników.</p>
 
-		<script src="spectral_wound.js"></script>
-		<script src="sarastus.js"></script>
-		<script src="mgla.js"></script>
-		<script src="varmia.js"></script>
-		<script src="mayhem.js"></script>
-		<script src="burzum.js"></script>
-		<script src="minenwerfer.js"></script>
-		<script src="patriatrkh.js"></script>
+		<script src="data.js"></script>
 		<script src="script.js"></script>
+		<script>
+			if ("serviceWorker" in navigator) {
+				navigator.serviceWorker.register("sw.js").catch(function () {});
+			}
+			// Obsługa #tracks z linku ze strony Zespoły
+			if (location.hash === "#tracks") {
+				document.addEventListener("DOMContentLoaded", function () {
+					var tab = document.querySelector('.nav-title[data-tab="tracks"]');
+					if (tab) tab.click();
+				});
+			}
+		</script>
 	</body>
 </html>

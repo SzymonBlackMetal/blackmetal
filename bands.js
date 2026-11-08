@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+function initArtistPage() {
 
     const discography = document.querySelector(".discography");
 
@@ -132,7 +132,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     scrollToAlbum();
 
-});
+}
+
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initArtistPage);
+} else {
+    initArtistPage();
+}
+
 
 
 /*
