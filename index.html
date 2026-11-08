@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="theme-color" content="#000000">
+		<meta name="description" content="Ranking albumów i utworów black metal">
+		<link rel="manifest" href="manifest.json">
+		<link rel="icon" type="image/png" href="img/icon.png">
+		<link rel="apple-touch-icon" href="img/icon.png">
+		<link href="style.css" rel="stylesheet">
+		<title>Black Metal</title>
+	</head>
+	<body>
+		<header>
+			<b class="main-title">Black Metal</b>
+			<nav class="navigation">
+				<a class="nav-title active" href="#" data-tab="albums">Albumy</a>
+				<a class="nav-title" href="#" data-tab="tracks">Utwory</a>
+				<a class="nav-title" href="zespoly.html">Zespoły</a>
+			</nav>
+		</header>
+
+		<div class="controls">
+			<div class="search-wrap">
+				<input type="search" id="search" class="search-input" placeholder="Szukaj albumu, zespołu, utworu…" autocomplete="off">
+			</div>
+			<div class="filters" id="filters">
+				<select id="filter-country" class="filter-select" title="Kraj">
+					<option value="">Wszystkie kraje</option>
+				</select>
+				<select id="filter-genre" class="filter-select" title="Gatunek">
+					<option value="">Wszystkie gatunki</option>
+				</select>
+				<select id="filter-rating" class="filter-select" title="Ocena">
+					<option value="">Dowolna ocena</option>
+					<option value="9">9+</option>
+					<option value="8">8+</option>
+					<option value="7">7+</option>
+					<option value="5">5+</option>
+				</select>
+				<select id="filter-year" class="filter-select" title="Lata">
+					<option value="">Wszystkie lata</option>
+					<option value="1990-1999">1990–1999</option>
+					<option value="2000-2009">2000–2009</option>
+					<option value="2010-2019">2010–2019</option>
+					<option value="2020-2029">2020+</option>
+				</select>
+				<button type="button" id="filters-reset" class="filter-reset" title="Wyczyść filtry">✕</button>
+			</div>
+		</div>
+
+		<main class="ranking" id="ranking"></main>
+		<main class="ranking" id="tracks-ranking" hidden></main>
+		<div id="load-more-wrap" hidden>
+			<button type="button" id="load-more" class="load-more-btn">Więcej...</button>
+		</div>
+		<p id="empty-state" class="empty-state" hidden>Brak wyników.</p>
+
+		<script src="data.js"></script>
+		<script src="script.js"></script>
+		<script>
+			if ("serviceWorker" in navigator) {
+				navigator.serviceWorker.register("sw.js").catch(function () {});
+			}
+			// Obsługa #tracks z linku ze strony Zespoły
+			if (location.hash === "#tracks") {
+				document.addEventListener("DOMContentLoaded", function () {
+					var tab = document.querySelector('.nav-title[data-tab="tracks"]');
+					if (tab) tab.click();
+				});
+			}
+		</script>
+	</body>
+</html>
