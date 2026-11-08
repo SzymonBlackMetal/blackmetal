@@ -337,7 +337,7 @@ window.allArtists = [
     "name": "Spectral Wound",
     "info": {
       "image": "img/Bands/Spectral Wound.png",
-      "country": "Canada",
+      "country": "Kanada",
       "location": "Montreal, Quebec",
       "founded": "2015",
       "active": "Aktywny",
